@@ -1,10 +1,11 @@
 def main():
     student= get_student()
-    print(f"{student[0] from {house[1]}")
+    print(f"{student['name']} from {student['house']}")
 
 def get_student():
-    name= input("Name:")
-    house= input("House:")
-    return (name,house)
+    student={}
+    student["name"]= input("Name: ")
+    student["house"]= input("house: ")
+    return student
 
 main()
