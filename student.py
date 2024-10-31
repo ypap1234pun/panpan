@@ -3,9 +3,9 @@ def main():
     print(f"{student['name']} from {student['house']}")
 
 def get_student():
-    student={}
-    student["name"]= input("Name: ")
-    student["house"]= input("house: ")
-    return student
+    
+    name= input("Name: ")
+    house  = input("house: ")
+    return {"name":name,"house":house}
 
 main()
